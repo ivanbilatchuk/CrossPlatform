@@ -25,18 +25,8 @@ kotlin {
             isStatic = true
         }
     }
-
-    androidTarget {
-        compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
-        }
-    }
-
-    jvm {
-        compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
-        }
-    }
+    
+    jvm()
     
     sourceSets {
         androidMain.dependencies {
@@ -52,9 +42,6 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
-            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
-            implementation("co.touchlab:kermit:2.0.4")
-
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -67,11 +54,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.lab2"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.example.lab2"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
@@ -99,11 +86,11 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "com.example.myapplication.MainKt"
+        mainClass = "com.example.lab2.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "com.example.myapplication"
+            packageName = "com.example.lab2"
             packageVersion = "1.0.0"
         }
     }
