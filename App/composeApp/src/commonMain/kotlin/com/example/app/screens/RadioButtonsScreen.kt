@@ -63,7 +63,7 @@ fun RadioButtonsScreen(navController: NavController) {
             HorizontalDivider()
             Spacer(Modifier.height(16.dp))
 
-            // Disabled group
+
             Text("Disabled group:", style = MaterialTheme.typography.titleSmall,
                 color = MaterialTheme.colorScheme.outline)
             listOf("Can't select A", "Can't select B").forEach { opt ->

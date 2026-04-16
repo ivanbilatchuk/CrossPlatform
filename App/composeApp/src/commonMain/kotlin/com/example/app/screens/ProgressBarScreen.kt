@@ -42,7 +42,7 @@ fun ProgressBarScreen(navController: NavController) {
             verticalArrangement = Arrangement.spacedBy(24.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Determinate Linear
+
             Text("Linear – Determinate", style = MaterialTheme.typography.titleMedium)
             LinearProgressIndicator(progress = { progress }, modifier = Modifier.fillMaxWidth())
             Text("${(progress * 100).toInt()}%", style = MaterialTheme.typography.bodyMedium)
@@ -53,20 +53,20 @@ fun ProgressBarScreen(navController: NavController) {
 
             HorizontalDivider()
 
-            // Indeterminate Linear
+
             Text("Linear – Indeterminate", style = MaterialTheme.typography.titleMedium)
             LinearProgressIndicator(modifier = Modifier.fillMaxWidth())
 
             HorizontalDivider()
 
-            // Determinate Circular
+
             Text("Circular – Determinate", style = MaterialTheme.typography.titleMedium)
             CircularProgressIndicator(progress = { progress })
             Text("${(progress * 100).toInt()}%", style = MaterialTheme.typography.bodySmall)
 
             HorizontalDivider()
 
-            // Indeterminate Circular
+
             Text("Circular – Indeterminate", style = MaterialTheme.typography.titleMedium)
             CircularProgressIndicator()
         }

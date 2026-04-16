@@ -41,7 +41,7 @@ fun ChipsScreen(navController: NavController) {
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            // Assist Chips
+
             Text("Assist Chips", style = MaterialTheme.typography.titleMedium)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 AssistChip(onClick = {}, label = { Text("Settings") },
@@ -50,7 +50,7 @@ fun ChipsScreen(navController: NavController) {
                     leadingIcon = { Icon(Icons.Default.Star, null, Modifier.size(18.dp)) })
             }
 
-            // Filter Chips
+
             Text("Filter Chips", style = MaterialTheme.typography.titleMedium)
             var f1 by remember { mutableStateOf(true) }
             var f2 by remember { mutableStateOf(false) }
@@ -64,7 +64,7 @@ fun ChipsScreen(navController: NavController) {
                     leadingIcon = if (f3) {{ Icon(Icons.Default.Done, null, Modifier.size(18.dp)) }} else null)
             }
 
-            // Input Chips
+
             Text("Input Chips", style = MaterialTheme.typography.titleMedium)
             val tags = remember { mutableStateListOf("Android", "iOS", "Desktop") }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -80,7 +80,7 @@ fun ChipsScreen(navController: NavController) {
             if (tags.isEmpty()) Text("All chips removed. Restart screen to reset.",
                 style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.outline)
 
-            // Suggestion Chips
+
             Text("Suggestion Chips", style = MaterialTheme.typography.titleMedium)
             var suggestion by remember { mutableStateOf("") }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
