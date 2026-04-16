@@ -31,7 +31,7 @@ fun App() {
                 verticalArrangement = Arrangement.Center
             ) {
                 Text(
-                    text = "Cross-Platform Time ",
+                    text = "Time ",
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.primary
                 )
