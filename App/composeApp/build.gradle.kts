@@ -27,7 +27,11 @@ kotlin {
         }
     }
     
-    jvm()
+    jvm {
+        mainRun {
+            mainClass = "com.example.app.MainKt"
+        }
+    }
     
     js {
         browser()
@@ -56,6 +60,8 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(libs.kotlinx.datetime)
             implementation(libs.napier)
+            implementation(libs.navigation.compose)
+            implementation(compose.materialIconsExtended)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

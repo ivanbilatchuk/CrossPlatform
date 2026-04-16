@@ -2,47 +2,47 @@ package com.example.app.theme
 
 import androidx.compose.ui.graphics.Color
 
-// ── Primary palette (deep indigo/violet) ──────────────────────────────────
-val Purple10  = Color(0xFF1A0072)
-val Purple20  = Color(0xFF2F0099)
-val Purple30  = Color(0xFF4527A0)
-val Purple40  = Color(0xFF5B4FCB)
-val Purple80  = Color(0xFFBDB2FF)
-val Purple90  = Color(0xFFE6DEFF)
-val Purple95  = Color(0xFFF4EFFF)
+// Modern Vibrant Palette for a beautiful Dark/Light theme
 
-// ── Secondary palette (cyan/teal) ─────────────────────────────────────────
-val Teal10  = Color(0xFF001F24)
-val Teal20  = Color(0xFF003640)
-val Teal30  = Color(0xFF004E5A)
-val Teal40  = Color(0xFF006874)
-val Teal80  = Color(0xFF4FD8EB)
-val Teal90  = Color(0xFF9DEEFA)
-val Teal95  = Color(0xFFCDFBFF)
+// Primary: Indigo / Violet
+val PrimaryLight = Color(0xFF4F46E5) // Indigo 600
+val OnPrimaryLight = Color(0xFFFFFFFF)
+val PrimaryContainerLight = Color(0xFFE0E7FF) // Indigo 100
+val OnPrimaryContainerLight = Color(0xFF312E81) // Indigo 900
 
-// ── Tertiary palette (rose/pink) ──────────────────────────────────────────
-val Rose10  = Color(0xFF3B000F)
-val Rose20  = Color(0xFF5E1123)
-val Rose30  = Color(0xFF7F2838)
-val Rose40  = Color(0xFFA03F4E)
-val Rose80  = Color(0xFFFFB1BF)
-val Rose90  = Color(0xFFFFD9DE)
-val Rose95  = Color(0xFFFFECEE)
+val PrimaryDark = Color(0xFF818CF8) // Indigo 400
+val OnPrimaryDark = Color(0xFF000000)
+val PrimaryContainerDark = Color(0xFF3730A3) // Indigo 800
+val OnPrimaryContainerDark = Color(0xFFE0E7FF) // Indigo 100
 
-// ── Neutrals ──────────────────────────────────────────────────────────────
-val Neutral10 = Color(0xFF1C1B1F)
-val Neutral20 = Color(0xFF313033)
-val Neutral90 = Color(0xFFE6E1E5)
-val Neutral95 = Color(0xFFF4EFF4)
-val Neutral99 = Color(0xFFFFFBFE)
+// Secondary: Vibrant Pink
+val SecondaryLight = Color(0xFFE11D48) // Rose 600
+val OnSecondaryLight = Color(0xFFFFFFFF)
+val SecondaryContainerLight = Color(0xFFFFE4E6) // Rose 100
+val OnSecondaryContainerLight = Color(0xFF881337) // Rose 900
 
-val NeutralVariant30 = Color(0xFF49454F)
-val NeutralVariant50 = Color(0xFF79747E)
-val NeutralVariant60 = Color(0xFF938F99)
-val NeutralVariant80 = Color(0xFFCAC4D0)
-val NeutralVariant90 = Color(0xFFE7E0EC)
+val SecondaryDark = Color(0xFFFB7185) // Rose 400
+val OnSecondaryDark = Color(0xFF000000)
+val SecondaryContainerDark = Color(0xFF9F1239) // Rose 800
+val OnSecondaryContainerDark = Color(0xFFFFE4E6) // Rose 100
 
-val Error10 = Color(0xFF410002)
-val Error40 = Color(0xFFBA1A1A)
-val Error80 = Color(0xFFFFB4AB)
-val Error90 = Color(0xFFFFDAD6)
+// Background & Surface
+val BackgroundLight = Color(0xFFF8FAFC) // Slate 50
+val OnBackgroundLight = Color(0xFF0F172A) // Slate 900
+val SurfaceLight = Color(0xFFFFFFFF)
+val OnSurfaceLight = Color(0xFF0F172A) // Slate 900
+val SurfaceVariantLight = Color(0xFFF1F5F9) // Slate 100
+val OnSurfaceVariantLight = Color(0xFF475569) // Slate 600
+
+// Premium Dark mode with deep space (slate) background
+val BackgroundDark = Color(0xFF0B0F19)
+val OnBackgroundDark = Color(0xFFF8FAFC) // Slate 50
+val SurfaceDark = Color(0xFF111827) // Gray 900
+val OnSurfaceDark = Color(0xFFF8FAFC) // Slate 50
+val SurfaceVariantDark = Color(0xFF1E293B) // Slate 800
+val OnSurfaceVariantDark = Color(0xFFCBD5E1) // Slate 300
+
+// Errors
+val ErrorLight = Color(0xFFDC2626) // Red 600
+val ErrorDark = Color(0xFFF87171) // Red 400
+val OnErrorVariant = Color.White

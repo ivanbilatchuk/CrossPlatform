@@ -22,6 +22,7 @@ fun App() {
 
         NavHost(navController = navController, startDestination = Screen.Home.route) {
             composable(Screen.Home.route)         { HomeScreen(navController) }
+            composable(Screen.DateTime.route)     { DateTimeScreen(navController) }
             composable(Screen.Buttons.route)      { ButtonsScreen(navController) }
             composable(Screen.Checkboxes.route)   { CheckboxesScreen(navController) }
             composable(Screen.Chips.route)        { ChipsScreen(navController) }
@@ -40,6 +41,7 @@ fun App() {
 @Composable
 private fun HomeScreen(navController: androidx.navigation.NavController) {
     val navItems = listOf(
+        "Date & Time (Lab 2)" to Screen.DateTime,
         "Buttons"           to Screen.Buttons,
         "Checkboxes"        to Screen.Checkboxes,
         "Chips"             to Screen.Chips,

@@ -2,6 +2,7 @@ package com.example.app.navigation
 
 sealed class Screen(val route: String) {
     data object Home        : Screen("home")
+    data object DateTime    : Screen("datetime")
     data object Buttons     : Screen("buttons")
     data object Checkboxes  : Screen("checkboxes")
     data object Chips       : Screen("chips")
