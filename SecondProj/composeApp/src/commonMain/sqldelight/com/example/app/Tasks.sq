@@ -1,0 +1,46 @@
+CREATE TABLE IF NOT EXISTS Task (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    task_desc   TEXT NOT NULL,
+    is_completed INTEGER NOT NULL DEFAULT 0
+);
+
+insertTask:
+INSERT INTO Task (task_desc, is_completed)
+VALUES (?, 0);
+
+selectAllTasks:
+SELECT * FROM Task;
+
+selectTaskById:
+SELECT * FROM Task
+WHERE id = ?;
+
+selectCompletedTasks:
+SELECT * FROM Task
+WHERE is_completed = 1;
+
+selectPendingTasks:
+SELECT * FROM Task
+WHERE is_completed = 0;
+
+updateTaskDescription:
+UPDATE Task
+SET task_desc = ?
+WHERE id = ?;
+
+markTaskCompleted:
+UPDATE Task
+SET is_completed = 1
+WHERE id = ?;
+
+markTaskPending:
+UPDATE Task
+SET is_completed = 0
+WHERE id = ?;
+
+deleteTaskById:
+DELETE FROM Task
+WHERE id = ?;
+
+deleteAllTasks:
+DELETE FROM Task;
