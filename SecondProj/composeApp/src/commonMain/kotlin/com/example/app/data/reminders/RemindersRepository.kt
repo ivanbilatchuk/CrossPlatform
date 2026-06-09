@@ -22,6 +22,10 @@ internal class RemindersRepository(
                 localDataSource.markTaskCompleted(id)
             } else {
                 localDataSource.markTaskPending(id)
+            }
         }
-    }
+
+        fun deleteReminder(id: Long) {
+            localDataSource.deleteTask(id)
+        }
 }

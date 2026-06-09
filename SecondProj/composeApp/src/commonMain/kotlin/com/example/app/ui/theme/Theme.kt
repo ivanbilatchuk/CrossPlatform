@@ -10,10 +10,10 @@ import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
-import AppDatabase.composeapp.generated.resources.Res
-import AppDatabase.composeapp.generated.resources.googlesans_regular
-import AppDatabase.composeapp.generated.resources.montserrat_regular
-import AppDatabase.composeapp.generated.resources.tenorsans_regular
+import secondproj.composeapp.generated.resources.Res
+import secondproj.composeapp.generated.resources.googlesans_regular
+import secondproj.composeapp.generated.resources.montserrat_regular
+import secondproj.composeapp.generated.resources.tenorsans_regular
 import org.jetbrains.compose.resources.Font
 
 private val lightScheme = lightColorScheme(

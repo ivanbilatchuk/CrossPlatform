@@ -4,9 +4,9 @@ import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
-import AppDatabase.composeapp.generated.resources.Res
-import AppDatabase.composeapp.generated.resources.googlesans_regular
-import AppDatabase.composeapp.generated.resources.montserrat_regular
+import secondproj.composeapp.generated.resources.Res
+import secondproj.composeapp.generated.resources.googlesans_regular
+import secondproj.composeapp.generated.resources.montserrat_regular
 import org.jetbrains.compose.resources.Font
 
 private val baseline = Typography()

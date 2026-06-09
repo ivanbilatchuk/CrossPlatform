@@ -33,5 +33,8 @@ internal class ReminderViewModel(
         onRemindersUpdated?.invoke(reminders)
     }
 
-
+    fun deleteReminder(id: Long) {
+        reminderRepository.deleteReminder(id = id)
+        onRemindersUpdated?.invoke(reminders)
+    }
 }
